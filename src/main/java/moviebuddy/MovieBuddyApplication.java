@@ -35,7 +35,7 @@ public class MovieBuddyApplication {
      */
 
     public void run(String[] args) throws Exception {
-    	final MovieFinder movieFinder = new MovieFinder();  // 새 클래스의 객체 생성 
+    	final MovieFinder movieFinder = new MovieFinder();
         final AtomicBoolean running = new AtomicBoolean(true);
         final BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         final PrintWriter output = new PrintWriter(System.out, false);

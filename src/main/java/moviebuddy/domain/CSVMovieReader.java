@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 import moviebuddy.ApplicationException;
 import moviebuddy.util.FileSystemUtils;
 
-public class CSVMovieReader implements MovieReader {
+public class CSVMovieReader implements MovieReader {  //서브 클래스 
 	/**
      * 영화 메타데이터를 읽어 저장된 영화 목록을 불러온다.
      * 

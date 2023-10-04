@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class MovieFinder {
-	private MovieReader movieReader = new CSVMovieReader();  // 새로운 implements 객체 생성 
+	private MovieReader movieReader = new CSVMovieReader();  // 새로운 객체 생성 (인터페이스는 객체생성 안되므로 서브클래스로 객체생성)
 	 /**
      * 저장된 영화 목록에서 감독으로 영화를 검색한다.
      * 
