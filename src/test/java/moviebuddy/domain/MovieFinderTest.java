@@ -8,7 +8,7 @@ import java.util.List;
 public class MovieFinderTest {
 
 	public static void main(String[] args) {
-		MovieFinder movieFinder = new MovieFinder(); // 이제는 MovieFinder 클래스에 의존(이름변경)
+		MovieFinder movieFinder = new CSVMovieFinder(); // MovieFinder -> CSVMovieFinder로 이름변경
 		
 		List<Movie> result = movieFinder.directedBy("Michael Bay");
 		assertEquals(3, result.size());
@@ -22,5 +22,4 @@ public class MovieFinderTest {
 			throw new RuntimeException(String.format("actual(%d) is different from the expected(%d)", actual, expected));			
 		}
 	}
-	
 }
