@@ -6,7 +6,8 @@ repositories {
 	mavenCentral()
 }
 
-dependencies {
+dependencies {	
+	implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
 
 }
 
